@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package challenge1;
+import java.util.*; //Import all java utilities 
+
+/**
+ *
+ * @author obedampah
+ */
+public class Challenge1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO create a program that will ask the users name, age, and reddit username. 
+        // have it tell them the information back, in the format:
+        // your name is (blank), you are (blank) years old, and your username is (blank)
+        
+        String Name;
+        int Age;
+        String Username;
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Hello, please enter your name:");
+        Name = input.next();
+        
+        System.out.println("Hello, please enter your age:");
+        Age = input.nextInt();
+        
+        System.out.println("Hello, please enter your reddit username:");
+        Username = input.next();
+        
+        System.out.println("Your name is " + Name + ", you are " + Age + " years old, and your username is " + Username + ".");
+    }
+    
+}
